@@ -7,7 +7,7 @@ mkdir build/tmp
 cp iostream.h build/tmp/iostream.h
 echo "header path: "${LIB}
 
-for i in */*.cpp; do
+for i in code/*/*.cpp; do
   FNM=`basename ${i} .cpp`
   echo "building "${i}"..."
 

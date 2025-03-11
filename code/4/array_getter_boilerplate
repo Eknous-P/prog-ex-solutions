@@ -1,0 +1,6 @@
+
+  int n,i;
+  cout<<"n=";cin>>n;
+  for (i=0; i<n; i++) {
+    cout<<"x["<<i<<"]=";cin>>x[i];
+  }
