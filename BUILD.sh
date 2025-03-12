@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 CXX=x86_64-w64-mingw32-g++
 LIB=`pwd`
 
