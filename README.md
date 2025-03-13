@@ -13,7 +13,7 @@ and no one wants to learn...
 
 # why `<iostream.h>`? why `void main()`?
 
-because if i write the "proper way", itd be clear who wrote the code (ss if it isnt already) (inb4 this gets leaked big time)<br>
+because if i write the "proper way", itd be clear who wrote the code (as if it isnt already) (inb4 this gets leaked big time)<br>
 also makes the code smaller so its easier to copy to paper (yea, _**paper**_)
 
 # why so much asking in the code?
