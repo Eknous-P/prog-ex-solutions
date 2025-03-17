@@ -9,11 +9,12 @@ mkdir build/tmp
 cp iostream.h build/tmp/iostream.h
 echo "header path: "${LIB}
 
-for i in code/*/*.cpp; do
-  FNM=`basename ${i} .cpp`
-  echo "building "${i}"..."
+buildf() {
+  j=$1
+  FNM=`basename ${j} .cpp`
+  echo "building "${j}"..."
 
-  cp ${i} build/tmp/${FNM}_tmp.cpp
+  cp ${j} build/tmp/${FNM}_tmp.cpp
   # change void main to int main
   sed -i -e 's/void\ main/int\ main/g'\
       build/tmp/"${FNM}"_tmp.cpp
@@ -22,4 +23,12 @@ for i in code/*/*.cpp; do
       build/tmp/"${FNM}"_tmp.cpp
   
   ${CXX} "build/tmp/${FNM}_tmp.cpp" -isystem ${LIB} -o "build/${FNM}.exe" -static -static-libgcc -static-libstdc++
+}
+
+if [ -z ${@#} ]; then
+for i in code/*/*.cpp; do
+buildf ${i}
 done
+else
+buildf code/${@#}.cpp
+fi
