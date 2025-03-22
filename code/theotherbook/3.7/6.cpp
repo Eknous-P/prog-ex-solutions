@@ -3,7 +3,8 @@
 
 void main() {
     double S=0, sum=0, x, y;
-    cout<<"x=";cin>>x;cout<<"y=";cin>>y;cout<<endl;
+    cout<<"x=";cin>>x;
+    cout<<"y=";cin>>y;
     for(int i=1; i<=7; i++) {
         for(int j=1; j<=8; j++) {
             if (cos(j)+sin(i)>=0){

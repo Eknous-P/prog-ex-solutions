@@ -2,25 +2,23 @@
 #include <cmath>
 
 void main() {
-    double S=1, sum=0, m, n, p, q, e=2.71;
+    double S=1, sum=0, m, n, p, q;
     
-    cout<<"m="; cin>>m; cout<<"n="; cin>>n; cout<<endl;
-    while (m>=n){
-        cout<<"n="; cin>>n; cout<<endl;
-    }
-    cout<<"p="; cin>>p; cout<<"q="; cin>>q; cout<<endl;
-    while (p>=q){
-        cout<<"q="; cin>>q; cout<<endl;
-    }
+    cout<<"m="; cin>>m;
+    cout<<"n="; cin>>n;
+    cout<<"p="; cin>>p;
+    cout<<"q="; cin>>q;
     
-    for(double i=m; i<=n; i++) {
-        for(double k=p; k<=q; k++) {
-            if (i*k<1){
-                sum += pow(e,sqrt(1-i*k))+cos(i-k);
+    if (m<n) if (p<q) {
+        for(double i=m; i<=n; i++) {
+            for(double k=p; k<=q; k++) {
+                if (i*k<1){
+                    sum += exp(sqrt(1-i*k))+cos(i-k);
+                }
             }
+            S *= sum;
+            sum=0;
         }
-        S *= sum;
-        sum=0;
     }
 
     cout<<S<<endl;

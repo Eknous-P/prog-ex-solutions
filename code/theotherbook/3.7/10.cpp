@@ -4,7 +4,7 @@
 void main() {
     double Z=0, prod=1, c;
     
-    cout<<"c=";cin>>c;cout<<endl;
+    cout<<"c=";cin>>c;
     
     for(double i=1; i<=7; i++) {
         for(double k=1; k<=8; k++) {
