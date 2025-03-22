@@ -3,9 +3,8 @@
 buildf() {
   j=$1
   FNM=`basename ${j} .cpp`
-  BNM=`dirname ${j}`
-  BNM=`dirname ${BNM} | cut -c 6-`
-  echo -e "building "${j}"... (FNM: ${FNM} DNM: ${BNM})"
+  BNM=`dirname ${j} | cut -c 6- | sed -e 's![/.]!_!g' `
+  echo -e "building "${j}"... (FNM: ${FNM} BNM: ${BNM})"
 
   cp ${j} build/tmp/${FNM}_tmp.cpp
   # change void main to int main

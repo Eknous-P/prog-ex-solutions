@@ -1,5 +1,4 @@
 #include <iostream.h>
-#include <cmath>
 void main() {
   int x[10];
   int n,i,t;

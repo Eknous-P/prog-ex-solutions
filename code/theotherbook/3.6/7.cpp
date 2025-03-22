@@ -7,7 +7,7 @@ void main() {
   cout<<"x=";cin>>x;
   double s=0;
   for (int i=1; i<=n; i++) {
-    s+=i/(pow(4,i)+pow(fabs(x),)i+2);
+    s+=i/(pow(4,i)+pow(fabs(x),i+2));
   }
   cout<<s<<endl;
 }

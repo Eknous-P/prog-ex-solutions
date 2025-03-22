@@ -7,7 +7,7 @@ void main() {
   cout<<"x=";cin>>x;
   double p=0;
   for (int i=0; i<=n; i++) {
-    p*=i/(i-1)-pow(cos(fabs(x)),i)
+    p*=i/(i-1)-pow(cos(fabs(x)),i);
   }
   cout<<p<<endl;
 }
