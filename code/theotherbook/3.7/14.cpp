@@ -2,18 +2,15 @@
 #include <cmath>
 
 void main() {
-    double Z=0, sum=0, v, n;
+    double S=0, prod=1;
     
-    cout<<"v=";cin>>v;cout<<endl;
-    cout<<"n=";cin>>n;cout<<endl;
-    
-    for(double k=1; k<=n; k++) {
-        for(double i=1; i<=k; i++) {
-            sum += v*i + k;
+    for(double i=10; i<=20; i++) {
+        for(double j=1; j<=i; j++) {
+            prod *= sin(i)+cos(j);
         }
-        Z += (k+5)*sum;
-        sum=0;
+        S += prod;
+        prod=1;
     }
 
-    cout<<Z<<endl;
+    cout<<S<<endl;
 }
