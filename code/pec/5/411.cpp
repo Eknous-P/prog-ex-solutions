@@ -2,18 +2,19 @@
 void main() {
   int m=4;
   int x[4][4];
+  int i,j;
 
   cout<<"m=";cin>>m;
-  for (int i=0; i<m; i++) {
-    for (int j=0; j<m; j++) {
+  for (i=0; i<m; i++) {
+    for (j=0; j<m; j++) {
       cout<<"x["<<i<<"]["<<j<<"]=";cin>>x[i][j];
     }
   }
 
   int c=0;
 
-  for (int i=0; i<m; i++) {
-    for (int j=0; j<i; j++) {
+  for (i=0; i<m; i++) {
+    for (j=0; j<i; j++) {
       if (x[i][j]%2==0) c++;
     }
   }
