@@ -9,7 +9,7 @@ void main() {
   }
   int a=0;
   for (i=0; i<n; i++) {
-    if ((x[i]%k)==0) a++;
+    if (i%k==0) a++;
   }
 
   cout<<a<<endl;

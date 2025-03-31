@@ -6,7 +6,7 @@ void main() {
   for (i=0; i<n; i++) {
     cout<<"x["<<i<<"]=";cin>>x[i];
   }
-  double p=0;
+  double p=1;
   int c=0;
   for (i=0;i<n;i++) {
     if (x[i]%2==1) {

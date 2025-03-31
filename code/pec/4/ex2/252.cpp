@@ -7,7 +7,7 @@ void main() {
     cout<<"x["<<i<<"]=";cin>>x[i];
   }
   cout<<"m=";cin>>m;
-  int s=0;
+  int s=1;
   for (i=0;i<n;i++) {
     if (x[i]%m==0) s*=x[i];
   }

@@ -9,7 +9,7 @@ void main() {
   int s=0;
   for (i=0;i<n;i++) {
     if ((x[i]+i)%3==0) {
-      s=x[i]*x[i];
+      s+=x[i]*x[i];
     }
   }
   cout<<s<<endl;

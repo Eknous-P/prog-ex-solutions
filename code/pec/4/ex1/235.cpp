@@ -8,7 +8,7 @@ void main() {
   for (i=0; i<n; i++) {
     cout<<"x["<<i<<"]=";cin>>x[i];
   }
-  double m=0;
+  double m=1;
   for (i=0; i<n; i++) {
     if (fabs(x[i])<t) m*=x[i];
   }
