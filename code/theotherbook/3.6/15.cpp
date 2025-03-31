@@ -5,8 +5,8 @@ void main() {
   double x;
   cout<<"n=";cin>>n;
   cout<<"x=";cin>>x;
-  double p=0;
-  for (int i=0; i<=n; i++) {
+  double p=1;
+  for (int i=1; i<=n; i++) {
     p*=i/(i-1)-pow(cos(fabs(x)),i);
   }
   cout<<p<<endl;
