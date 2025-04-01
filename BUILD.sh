@@ -27,7 +27,8 @@ cp iostream.h build/tmp/iostream.h
 echo "header path: "${LIB}
 
 if [ -z ${@#} ]; then
-  for i in code/*/*/*.cpp; do
+  for i in code/*/*/*/*.cpp code/*/*/*.cpp; do
+    echo "file ${i}"
     buildf ${i}
   done
 elif [ ${@#} == "clean" ]; then
