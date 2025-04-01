@@ -25,5 +25,8 @@ these programs are supposed to work with arbitrary... values (even arrays.....),
 
 **because thats what we've been taught. i know it sucks but i cant rewrite the curriculum (yet)**
 
+# i have no idea what is "NPUA"
+# why are you so angry?
+# what happened?
 
-something I just wrote for no reason that has no purpose of existence in a file that is barely used anything but project that might be helpful for us only
+its okay. you dont need to know any of this. you can go now. maybe check some of our other repos

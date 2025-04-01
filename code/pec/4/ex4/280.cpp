@@ -7,12 +7,9 @@ void main() {
     cout<<"X["<<i<<"]=";cin>>X[i];
     cout<<"Y["<<i<<"]=";cin>>Y[i];
   }
-
-  double sx=0,py=1;
+  double s=0;
   for (i=0; i<n; i++) {
-    sx+=X[i];
-    py*=Y[i];
+    s+=X[i]*X[i]+Y[i]*Y[i];
   }
-
-  cout << sx/py << endl;
+  cout<<s<<endl;
 }

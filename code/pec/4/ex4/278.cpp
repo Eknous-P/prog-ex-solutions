@@ -1,18 +1,17 @@
 #include <iostream.h>
 void main() {
-  double X[10],Y[10];
-  int n,i;
+  int X[10],Y[10];
+  int n,i,k;
+  cout<<"k=";cin>>k;
   cout<<"n=";cin>>n;
   for (i=0; i<n; i++) {
     cout<<"X["<<i<<"]=";cin>>X[i];
     cout<<"Y["<<i<<"]=";cin>>Y[i];
   }
-
-  double sx=0,py=1;
+  int c=0;
   for (i=0; i<n; i++) {
-    sx+=X[i];
-    py*=Y[i];
+    if (X[i]%k==0) c++;
+    if (Y[i]%k==0) c++;
   }
-
-  cout << sx/py << endl;
+  cout<<c<<endl;
 }

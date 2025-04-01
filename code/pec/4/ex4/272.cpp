@@ -1,4 +1,5 @@
 #include <iostream.h>
+#include <cmath>
 void main() {
   double X[10],Y[10];
   int n,i;
@@ -7,12 +8,12 @@ void main() {
     cout<<"X["<<i<<"]=";cin>>X[i];
     cout<<"Y["<<i<<"]=";cin>>Y[i];
   }
-
-  double sx=0,py=1;
+  double mx=0,my=0;
   for (i=0; i<n; i++) {
-    sx+=X[i];
-    py*=Y[i];
+    mx+=X[i]*X[i];
+    my+=Y[i]*Y[i];
   }
-
-  cout << sx/py << endl;
+  mx=sqrt(mx);
+  my/=sqrt(my);
+  cout<<mx+my<<endl;
 }
