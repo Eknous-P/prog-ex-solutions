@@ -6,8 +6,8 @@ void main() {
 
     cout<<"b=";cin>>b;
     
-    for(double k=0; k<=6; k++) {
-        for(double j=1; j<=5; j++) {
+    for(int k=0; k<=6; k++) {
+        for(int j=1; j<=5; j++) {
             sum+=tan(b*k+j*j);
         }
         S+=(k+1)*sum;

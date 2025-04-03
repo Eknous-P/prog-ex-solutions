@@ -7,8 +7,8 @@ void main() {
     cout<<"v=";cin>>v;
     cout<<"n=";cin>>n;
     
-    for(double k=1; k<=n; k++) {
-        for(double i=1; i<=k; i++) {
+    for(int k=1; k<=n; k++) {
+        for(int i=1; i<=k; i++) {
             sum += v*i + k;
         }
         Z += (k+5)*sum;

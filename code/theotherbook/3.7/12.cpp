@@ -10,8 +10,8 @@ void main() {
     cout<<"q="; cin>>q;
     
     if (m<n) if (p<q) {
-        for(double i=m; i<=n; i++) {
-            for(double k=p; k<=q; k++) {
+        for(int i=m; i<=n; i++) {
+            for(int k=p; k<=q; k++) {
                 if (i*k<1){
                     sum += exp(sqrt(1-i*k))+cos(i-k);
                 }

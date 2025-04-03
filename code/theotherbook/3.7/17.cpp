@@ -6,8 +6,8 @@ void main() {
     
     cout<<"a=";cin>>a;
     
-    for(double i=1; i<=8; i++) {
-        for(double j=1; j<=8; j++) {
+    for(int i=1; i<=8; i++) {
+        for(int j=1; j<=8; j++) {
             prod*=cos(a*i + j);
         }
         S+=sin(i*i+1)*prod;

@@ -6,8 +6,8 @@ void main() {
     
     cout<<"c=";cin>>c;
     
-    for(double i=1; i<=7; i++) {
-        for(double k=1; k<=8; k++) {
+    for(int i=1; i<=7; i++) {
+        for(int k=1; k<=8; k++) {
             prod *= pow(i,2)+c*k;
         }
         Z += prod;

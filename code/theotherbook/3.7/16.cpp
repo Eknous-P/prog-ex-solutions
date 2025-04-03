@@ -6,8 +6,8 @@ void main() {
     
     cout<<"f=";cin>>f;
     
-    for(double i=1; i<=12; i++) {
-        for(double j=1; j<=7; j++) {
+    for(int i=1; i<=12; i++) {
+        for(int j=1; j<=7; j++) {
             sum += f*i + j*j;
         }
         Y*=(i+1)*sum;
